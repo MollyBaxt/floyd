@@ -51,7 +51,7 @@ print(floyd(0, 0, 0, graph))
 
 class Tests(unittest.TestCase):
     """
-    testing against a known correct answer from the imperative version
+    Different unit tests
     """
     def test_1(self):
         """
