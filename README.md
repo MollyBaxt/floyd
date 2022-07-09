@@ -10,4 +10,4 @@ The language used was Python3
 
 To run the code ensure you have installed the packages on the requirements.txt
 
-To install typee into you command line      git clone git@github.com:MollyBaxt/floyd.git
+To install type into you command line      -git clone git@github.com:MollyBaxt/floyd.git
