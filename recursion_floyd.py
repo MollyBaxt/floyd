@@ -1,5 +1,5 @@
 """
-Floyd Warshall Algorithm with recursion
+Code designed to use recursion in Floyd Warshall's Algorithm
 """
 import sys
 # Maximum number possible for nodes with no direct path
@@ -12,20 +12,22 @@ graph = [
     [NO_PATH, NO_PATH, NO_PATH, 0]
     ]
 MAX_LENGTH = len(graph[0])
+# Number of vertices
 V = MAX_LENGTH-1
 
 
 # k = intermediate, i = startnode, j = endnode, distance = graph,
 def floyd(k, i, j, distance):
     """
-    start of algorithm and recursion
+    Function to recursively implement Floyds Algorithm
     """
     if i == j:
         distance[i][j] = 0
-        # Finds all possible paths and returns the minimum
+# Finds all possible paths and returns the minimum
     distance[i][j] = min(distance[i][j],
                          distance[i][k] +
                          distance[k][j])
+# Start of recursion
     if j < V:
         j += 1
         distance = floyd(k, i, j, distance)
