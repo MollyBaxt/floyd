@@ -57,15 +57,13 @@ class Tests(unittest.TestCase):
         """
         testing against a known correct answer from the imperative version
         """
-        graph = [
+        diagram = [
             [0, 7, NO_PATH, 8],
             [NO_PATH, 0, 5, NO_PATH],
             [NO_PATH, NO_PATH, 0, 2],
             [NO_PATH, NO_PATH, NO_PATH, 0]
             ]
-        MAX_LENGTH = len(graph[0])
-        V = MAX_LENGTH-1
-        calculated_distances = floyd(0, 0, 0, graph)
+        calculated_distances = floyd(0, 0, 0, diagram)
         correct_distances = [
             [0, 7, 12, 8],
             [9223372036854775807, 0, 5, 7],
@@ -79,15 +77,13 @@ class Tests(unittest.TestCase):
         """
         testing a value in the final stage of recursion
         """
-        graph = [
+        diagram = [
             [0, 7, NO_PATH, 8],
             [NO_PATH, 0, 5, NO_PATH],
             [NO_PATH, NO_PATH, 0, 2],
             [NO_PATH, NO_PATH, NO_PATH, 0]
             ]
-        MAX_LENGTH = len(graph[0])
-        V = MAX_LENGTH-1
-        calculated_distances = floyd(1, 0, 2, graph)
+        calculated_distances = floyd(1, 0, 2, diagram)
         correct_distances = [
             [0, 7, 12, 8],
             [9223372036854775807, 0, 5, 7],
@@ -101,15 +97,13 @@ class Tests(unittest.TestCase):
         """
         testing the  recursion with a non existent node
         """
-        graph = [
+        diagram = [
             [0, 7, NO_PATH, 8],
             [NO_PATH, 0, 5, NO_PATH],
             [NO_PATH, NO_PATH, 0, 2],
             [NO_PATH, NO_PATH, NO_PATH, 0]
             ]
-        MAX_LENGTH = len(graph[0])
-        V = MAX_LENGTH-1
-        calculated_distances = floyd(0, 1, 4, graph)
+        calculated_distances = floyd(0, 1, 4, diagram)
         correct_distances = [
             [0, 7, 12, 8],
             [9223372036854775807, 0, 5, 7],
@@ -122,15 +116,13 @@ class Tests(unittest.TestCase):
         """
         testing against the version on the website given
         """
-        graph = [
+        diagram = [
             [0, 5, NO_PATH, 10],
             [NO_PATH, 0, 3, NO_PATH],
             [NO_PATH, NO_PATH, 0, 1],
             [NO_PATH, NO_PATH, NO_PATH, 0]
             ]
-        MAX_LENGTH = len(graph[0])
-        V = MAX_LENGTH-1
-        calculated_distances = floyd(0, 0, 0, graph)
+        calculated_distances = floyd(0, 0, 0, diagram)
         correct_distances = [
             [0, 5, 8, 9],
             [NO_PATH, 0, 3, 4],
@@ -144,15 +136,13 @@ class Tests(unittest.TestCase):
         """
         testing function will error by giving an invalid input
         """
-        graph = [
+        diagram = [
             [0, 7, 'length', 8],
             [NO_PATH, 0, 5, NO_PATH],
             [NO_PATH, NO_PATH, 0, 2],
             [NO_PATH, NO_PATH, NO_PATH, 0]
             ]
-        MAX_LENGTH = len(graph[0])
-        V = MAX_LENGTH-1
-        calculated_distances = floyd(0, 0, 0, graph)
+        calculated_distances = floyd(0, 0, 0, diagram)
         correct_distances = [
             [0, 7, 12, 8],
             [9223372036854775807, 0, 5, 7],
@@ -164,4 +154,3 @@ class Tests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    
