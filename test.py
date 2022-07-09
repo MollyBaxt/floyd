@@ -114,26 +114,6 @@ class Tests(unittest.TestCase):
 
     def test_4(self):
         """
-        testing against the version on the website given
-        """
-        diagram = [
-            [0, 5, NO_PATH, 10],
-            [NO_PATH, 0, 3, NO_PATH],
-            [NO_PATH, NO_PATH, 0, 1],
-            [NO_PATH, NO_PATH, NO_PATH, 0]
-            ]
-        calculated_distances = floyd(0, 0, 0, diagram)
-        correct_distances = [
-            [0, 5, 8, 9],
-            [NO_PATH, 0, 3, 4],
-            [NO_PATH, NO_PATH, 0, 1],
-            [NO_PATH, NO_PATH, NO_PATH, 0]
-            ]
-        print("test_4_calculated_distances: ", calculated_distances)
-        self.assertEqual(correct_distances, calculated_distances)
-
-    def test_5(self):
-        """
         testing function will error by giving an invalid input
         """
         diagram = [
@@ -149,7 +129,7 @@ class Tests(unittest.TestCase):
             [9223372036854775807, 9223372036854775807, 0, 2],
             [9223372036854775807, 9223372036854775807, 9223372036854775807, 0]
             ]
-        print("test_5_calculated_distances: ", calculated_distances)
+        print("test_4_calculated_distances: ", calculated_distances)
         self.assertEqual(correct_distances, calculated_distances)
 
 if __name__ == '__main__':
