@@ -16,7 +16,7 @@ MAX_LENGTH = len(graph[0])
 V = MAX_LENGTH-1
 
 
-# k = intermediate, i = startnode, j = endnode, distance = graph,
+# k = intermediate, i = startnode, j = endnode, distance = graph
 def floyd(k, i, j, distance):
     """
     Function to recursively implement Floyds Algorithm
