@@ -6,4 +6,8 @@ This code was unit tested with four different tests. The file is named test.py
 The code was also line level perfomance tested. The file is named line_level_performance.py
 An imperative version of floyds Algorithm is alos provided to view for comparison purposes. File named imperative_floyd.py
 
+The language used was Python3
+
 To run the code ensure you have installed the packages on the requirements.txt
+
+To install typee into you command line      git clone git@github.com:MollyBaxt/floyd.git
