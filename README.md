@@ -14,10 +14,11 @@ An imperative version of Floyds Algorithm is also provided to view for compariso
 The language used was Python3
 ## Run and installation
 To run the code ensure you have installed the packages on the requirements.txt
+To install the package type    pip install -r requirements.txt into your command line
 
 To install, type the below into your command line      
-
--git clone git@github.com:MollyBaxt/floyd.git
+-git clone https://github.com/MollyBaxt/floyd.git
+This will save the folder containing all the files within the repository 
 
 ## License
 Copyright [2022] [MOLLY-ROSE BAXTER]
