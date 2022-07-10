@@ -15,7 +15,7 @@ The language used was Python3
 ## Run and installation
 To run the code ensure you have installed the packages on the requirements.txt
 
-To install type into you command line      
+To install, type the below into your command line      
 
 -git clone git@github.com:MollyBaxt/floyd.git
 
